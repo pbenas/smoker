@@ -1,4 +1,4 @@
-#VERSION := $(shell python setup.py --version)
+VERSION := $(shell python setup.py --version)
 #$(info == Making version $(VERSION))
 
 all:
