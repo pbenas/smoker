@@ -5,12 +5,7 @@ all:
 	python setup.py build
 
 sources: clean
-	$(eval TMPDIR := $(shell mktemp -d))
-	# Populate the spec file with correct version from setup.py
-	sed -i -e s,\%VERSION\%,$(VERSION),g smoker.spec
-	tar czf "$(TMPDIR)/smoker.tar.gz" ../smoker
-	mv "$(TMPDIR)/smoker.tar.gz" smoker.tar.gz
-	rmdir "$(TMPDIR)"
+	echo 'test'
 
 install:
 	python setup.py install
