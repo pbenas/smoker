@@ -8,7 +8,7 @@ Summary:        Smoke Testing Framework
 
 Group:          Applications/System
 License:        BSD
-URL:            https://github.com/gooddata/smoker
+URL:            https://github.com/pbenas/smoker
 Source0:        smoker.tar.gz
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
