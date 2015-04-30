@@ -20,6 +20,7 @@ rpm: sources
 	rpmbuild --define "_topdir $(CURDIR)/build/rpm" -ba build/rpm/SPECS/smoker.spec
 
 clean:
+	python setup.py clean
 	rm -rf smoker.egg-info
 	rm -rf build
 	rm -rf dist
