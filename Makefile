@@ -1,10 +1,10 @@
-VERSION := $(shell python setup.py --version)
-$(info == Making version $(VERSION))
+#VERSION := $(shell python setup.py --version)
+#$(info == Making version $(VERSION))
 
 all:
 	python setup.py build
 
-sources: clean
+sources:
 	echo 'test'
 
 install:
