@@ -20,7 +20,6 @@ rpm: sources
 	rpmbuild --define "_topdir $(CURDIR)/build/rpm" -ba build/rpm/SPECS/smoker.spec
 
 clean:
-	rm -f smoker.tar.gz
 	rm -rf smoker.egg-info
 	rm -rf build
 	rm -rf dist
